@@ -145,16 +145,9 @@ html {
     width: 1.15rem;
 }
 
-.emp-gender-options {
+.emp-reg-form-radio-gender-option{
     display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.emp-reg-form-radio-gender-option {
-    display: flex;
-    align-items: center;
-    margin-right: 1.25rem;
+    margin-right: -.4rem;
 }
 
 .emp-reg-form-radio-gender-option label {
@@ -164,7 +157,7 @@ html {
 
 .emp-reg-form-radio-gender-option label input {
     color: #42515F;
-    width: 1.25rem;
+    width: 1.1rem;
 }
 
 .emp-reg-form-department {
@@ -320,67 +313,7 @@ html {
     width: 70%;
 }
 
-@media (max-width: 768px) {
-    .emp-reg-form {
-        padding: 1.5rem;
-        gap: 2rem;
-    }
-
-    .emp-reg-form h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .emp-reg-form-content {
-        gap: 1rem;
-    }
-
-    .emp-reg-form-name,
-    .emp-gender-options,
-    .emp-reg-form-department,
-    .emp-reg-form-salary,
-    .emp-reg-form-start-date,
-    .emp-form-notes {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .emp-reg-form-name label,
-    .emp-reg-form-radio-option label,
-    .emp-gender-options label,
-    .emp-reg-form-department label,
-    .emp-reg-form-salary label,
-    .emp-reg-form-start-date label,
-    .emp-form-notes label {
-        width: 100%;
-        margin-bottom: 0.5rem;
-    }
-
-    .emp-reg-form-name input,
-    .profile-radio,
-    .emp-reg-form-radio-gender-option,
-    .emp-reg-form-checkbox-department,
-    .emp-reg-form-salary-select,
-    .emp-reg-form-start-date-select,
-    .emp-form-notes-textarea {
-        width: 100%;
-    }
-
-    .emp-reg-form-button {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .emp-reg-form-button-submit {
-        width: 100%;
-    }
-
-    .emp-form-notes textarea{
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .emp-reg-logo-div {
         margin-left: 2%;
         gap: 0.2rem;
@@ -398,34 +331,149 @@ html {
 
     .emp-reg-form h2 {
         font-size: 1.25rem;
+        text-align: center;
     }
 
-    .emp-reg-form-button {
+    .emp-reg-form-name{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .emp-reg-form-name input{
+        width: 100%;
+    }
+
+   
+    .emp-reg-form-name,
+    .emp-reg-form-radio-option,
+    .emp-gender-options,
+    .emp-reg-form-department,
+    .emp-reg-form-salary,
+    .emp-reg-form-start-date,
+    .emp-form-notes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+   
+    .emp-reg-form-name label,
+    .emp-reg-form-radio-option > label:first-child,
+    .emp-gender-options > div:first-child,
+    .emp-reg-form-department > label:first-child,
+    .emp-reg-form-salary > label,
+    .emp-reg-form-start-date > label,
+    .emp-form-notes > label {
+        width: 30%;
+        min-width: 80px;
+        font-weight: 500;
+    }
+
+   
+    .emp-reg-form-name input,
+    .profile-radio,
+    .emp-reg-form-radio-gender-option,
+    .emp-reg-form-checkbox-department,
+    .emp-reg-form-salary-select,
+    .emp-reg-form-start-date-select,
+    .emp-form-notes textarea {
+        width: 65%;
+    }
+
+
+    .profile-radio {
+        display: flex;
         flex-direction: column;
         gap: 0.75rem;
     }
 
-    .emp-reg-form-button-submit #submit-button {
+    .profile-radio label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .emp-reg-form-radio-gender-option {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .emp-reg-form-radio-gender-option label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .emp-reg-form-checkbox-department {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .emp-reg-form-checkbox-department label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .emp-reg-form-salary-select select {
         width: 100%;
     }
 
+
+    .emp-reg-form-start-date-select {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .emp-reg-form-start-date-select select {
+        width: 100%;
+    }
+
+
     .emp-form-notes textarea {
         margin-left: 0;
+        width: 100%;
+    }
+    .emp-form-notes{
+        display: flex;
+        flex-direction: column;
     }
 
-    .emp-form-notes textarea{
-        margin-left: 0;
+    .emp-reg-form-button {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
     }
 
-    .emp-reg-form-checkbox-department{
-        display: block;
+    .emp-reg-form-button > div:first-of-type {
+        width: 100%;
     }
 
-    .emp-reg-form-radio-option{
-        display: block;
+    .emp-reg-form-button-submit {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
     }
 
-    .profile-radio{
-        flex-wrap: wrap;
+    .emp-reg-form-button button {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: 1.25rem;
+        height: 1.25rem;
     }
 }
