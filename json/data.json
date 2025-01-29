@@ -1,0 +1,68 @@
+{
+  "employeeList": [
+    {
+      "id": "90ec",
+      "name": "sadasd",
+      "profileImage": "../assets/boy1.jpeg",
+      "gender": "female",
+      "department": [
+        "finance"
+      ],
+      "salary": "₹20,000",
+      "startDate": {
+        "day": "01",
+        "month": "03",
+        "year": "2023"
+      },
+      "notes": ""
+    },
+    {
+      "id": "dec5",
+      "name": "sew",
+      "profileImage": "../assets/boy1.jpeg",
+      "gender": "male",
+      "department": [
+        "HR"
+      ],
+      "salary": "₹20,000",
+      "startDate": {
+        "day": "03",
+        "month": "05",
+        "year": "2023"
+      },
+      "notes": "hjhfg"
+    },
+    {
+      "name": "raasd",
+      "profileImage": "../assets/boy1.jpeg",
+      "gender": "male",
+      "department": [
+        "HR"
+      ],
+      "salary": "₹20,000",
+      "startDate": {
+        "day": "03",
+        "month": "02",
+        "year": "2022"
+      },
+      "notes": "vv",
+      "id": "643c"
+    },
+    {
+      "id": "1650",
+      "name": "sam",
+      "profileImage": "../assets/girl2.jpeg",
+      "gender": "female",
+      "department": [
+        "sales"
+      ],
+      "salary": "₹10,000",
+      "startDate": {
+        "day": "01",
+        "month": "07",
+        "year": "2024"
+      },
+      "notes": "bngbc"
+    }
+  ]
+}
