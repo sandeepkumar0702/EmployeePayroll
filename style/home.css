@@ -208,3 +208,9 @@ tbody tr {
 .emp-main-search-box input::placeholder {
     font-size: 0.9rem;
 }
+#del-btn-search{
+    width: 2%;
+    font-size: 1.3rem;
+    border: 1px black;
+    border-radius: 40%;
+}

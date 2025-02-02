@@ -108,3 +108,6 @@ function searchByName() {
         })
 
 }
+document.getElementById("del-btn-search").addEventListener("click", function() {
+    location.reload();
+});

@@ -162,7 +162,7 @@ html {
 
 .emp-reg-form-department {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     margin-top: 1rem;
     align-items: center;
 }
@@ -170,7 +170,7 @@ html {
 .emp-reg-form-checkbox-department {
     display: flex;
     gap: 1rem;
-    align-items: center;
+    align-items: start;
 }
 
 .emp-reg-form-checkbox-department label {
@@ -191,6 +191,7 @@ html {
 }
 
 .emp-reg-form-salary-select {
+    align-items: start;
     margin-left: 1rem;
 }
 

@@ -117,3 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+
+document.getElementById("name").addEventListener("input", function () {
+    let nameInput = this.value;
+    let regex = /^[A-Za-z ]*$/; // Allow only letters and spaces
+    let errorSpan = document.getElementById("name-error");
+
+    if (!regex.test(nameInput)) {
+        errorSpan.style.display = "inline";
+        this.value = nameInput.replace(/[^A-Za-z ]/g, ""); // Remove invalid characters
+    } else {
+        errorSpan.style.display = "none";
+    }
+});
